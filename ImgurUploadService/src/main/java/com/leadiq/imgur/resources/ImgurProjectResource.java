@@ -57,7 +57,7 @@ public class ImgurProjectResource {
 		new Thread(new Runnable() {
             @Override
             public void run() {
-            	asyncResponse.resume("{\"Job Status\":\"Image Upload processing in background!\"}");
+            	asyncResponse.resume("{\"Job Status\":\" Image Upload processing in background!\"}");
             	String uploadImgRsp=UploadImageHandler.processUploadImage(incomingData);
             	
             }

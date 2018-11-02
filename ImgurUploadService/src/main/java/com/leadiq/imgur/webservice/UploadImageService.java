@@ -40,7 +40,6 @@ public class UploadImageService {
 		try {
 			response = client.newCall(request).execute();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -49,11 +48,9 @@ public class UploadImageService {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		try {
 			System.out.println(uploadImage(UploadImageHandler.getBase64encodedImage("https://i.imgur.com/RZ8EGJL.jpg")));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

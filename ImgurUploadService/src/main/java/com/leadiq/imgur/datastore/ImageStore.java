@@ -5,8 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ImageStore {
-	
-	//public static Map<String,String> imgIdWithLink=new HashMap<String,String>();
+
 	/*
 	 * Whenever we upload an image, in UploadImageHandler.java we are extracting imageurl
 	 * from json response and adding that to this imgLinkList.

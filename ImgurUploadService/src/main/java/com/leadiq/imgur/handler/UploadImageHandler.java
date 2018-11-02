@@ -71,9 +71,9 @@ public class UploadImageHandler {
 		String encodedBase64 = null;
 
 		/*
-		 * If url is hosted on internet pass http url download the image using
-		 * URLConnection and getInputStream and convert into Base64 For
-		 * example-https://imgur.com/RZ8EGJL
+		 * If url is hosted on Internet pass http url download the image using
+		 * URLConnection and getInputStream and convert into Base64
+		 *  Example-https://i2.wp.com/nguyenvanchuong.com/wp-content/uploads/2017/11/Lead-IQ.jpg
 		 */
 		if (url.startsWith("http")) {
 			try {
@@ -96,7 +96,7 @@ public class UploadImageHandler {
 
 		/*
 		 * Use Desktop url. Read the image from file and convert it into Base64
-		 * Format. For Example=C:\\Users\\Rajan\\Desktop\\testimgurimage1.gif
+		 * Format.Example=/Users/nishitha.reddy/Desktop/IMG_6646.jpg
 		 */
 		else {
 			File originalFile = new File(url);
